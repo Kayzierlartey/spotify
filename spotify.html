@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Layout Wrapper -->
+  <div class="flex h-screen flex-col">
+    <div class="flex flex-1 overflow-hidden">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-gray-900 p-4 overflow-y-auto">
+        <h1 class="text-2xl font-bold mb-6">Spotify</h1>
+        <ul class="space-y-4">
+          <li><a href="#" class="hover:text-green-500">Home</a></li>
+          <li><a href="#" class="hover:text-green-500">Search</a></li>
+          <li><a href="#" class="hover:text-green-500">Your Library</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-6 overflow-y-auto">
+        <section>
+          <h2 class="text-3xl font-bold mb-6">Trending Songs</h2>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 cursor-pointer">
+              <img src="https://th.bing.com/th/id/OIP.zKYXMfcJ4XrcSRTY7z4RSwAAAA?cb=thvnextc1&rs=1&pid=ImgDetMain" alt="Album Cover" class="mb-4 rounded w-full"/>
+              <h3 class="text-lg font-semibold">I won't go back</h3>
+              <p class="text-sm text-gray-400">William McDowell</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 cursor-pointer">
+              <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4a/28/9a/4a289a73-075f-3e4a-0ddc-d26debc071b5/859786663790_cover.jpg/1200x1200bf-60.jpg" alt="Album Cover" class="mb-4 rounded w-full"/>
+              <h3 class="text-lg font-semibold">The Great Commission</h3>
+              <p class="text-sm text-gray-400">Dunsin Oyekan</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 cursor-pointer">
+              <img src="https://g.christianbook.com/dg/product/cbd/f450/DL158630-CP.jpg" alt="Album Cover" class="mb-4 rounded w-full"/>
+              <h3 class="text-lg font-semibold">You Laid Aside Your Majesty</h3>
+              <p class="text-sm text-gray-400">Heart of Worship Band</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 cursor-pointer">
+              <img src="https://th.bing.com/th/id/OIP.GjooTBGD2JDZBV0JvT-rIgHaHa?cb=thvnextc1&rs=1&pid=ImgDetMain" alt="Album Cover" class="mb-4 rounded w-full"/>
+              <h3 class="text-lg font-semibold">Hallelujah Live</h3>
+              <p class="text-sm text-gray-400">Nathaniel Bassey</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recents Section -->
+        <section class="mt-12">
+          <h2 class="text-3xl font-bold mb-6">Recents</h2>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Card 5 -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 cursor-pointer">
+              <img src="https://th.bing.com/th/id/OIP.BBLRkwvkxFskIytsH-kT-QHaEK?cb=thvnextc1&rs=1&pid=ImgDetMain" alt="Album Cover" class="mb-4 rounded w-full h-30px"/>
+              <h3 class="text-lg font-semibold">Spirit Chants</h3>
+              <p class="text-sm text-gray-400">Victoria Orenze</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 cursor-pointer">
+              <img src="https://i.ytimg.com/vi/WS4qWFvGJN8/maxresdefault.jpg" alt="Album Cover" class="mb-4 rounded w-full h-30px"/>
+              <h3 class="text-lg font-semibold">Kadosh</h3>
+              <p class="text-sm text-gray-400">Joe Mettle</p>
+            </div>
+
+            <!-- card 7 -->
+              <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 cursor-pointer">
+              <img src="https://i.ebayimg.com/images/g/X90AAOSwBkRk8J54/s-l1600.jpg" alt="Album Cover" class="mb-4 rounded w-full"/>
+              <h3 class="text-lg font-semibold">Throne room</h3>
+              <p class="text-sm text-gray-400">Cece Winans</p>
+            </div>
+
+            <!-- card 8 -->
+              <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 cursor-pointer">
+              <img src="https://th.bing.com/th/id/OIP.BLdNZm7JnbbB_4eyfag5GAHaFj?rs=1&pid=ImgDetMain" alt="Album Cover" class="mb-4 rounded w-full"/>
+              <h3 class="text-lg font-semibold">Here l am to worship</h3>
+              <p class="text-sm text-gray-400">Hillsong</p>
+            </div>
+
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Music Player (Bottom Bar) -->
+    <footer class="bg-gray-900 p-4 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <img src="https://th.bing.com/th/id/OIP.wa5mJUs5ttrUc03DUCSqEgAAAA?cb=thvnextc1&rs=1&pid=ImgDetMain" alt="Track" class="w-12 h-12 rounded"/>
+        <div>
+          <h4 class="text-sm font-semibold">Spirit Chants</h4>
+          <p class="text-xs text-gray-400">Victoria Orenze</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button>⏮️</button>
+        <button>▶️</button>
+        <button>⏭️</button>
+      </div>
+      <div class="w-1/3">
+        <div class="h-1 bg-gray-600 rounded">
+          <div class="h-1 bg-green-500 w-1/3 rounded"></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
+
